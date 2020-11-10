@@ -19,5 +19,6 @@
     "url": "https://github.com/DarkJunior59/brain-games/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/DarkJunior59/brain-games#readme"
+  "homepage": "https://github.com/DarkJunior59/brain-games#readme",
+  "dependencies": {}
 }
