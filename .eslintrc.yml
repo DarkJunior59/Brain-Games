@@ -3,3 +3,8 @@ extends:
  env:
    node: true
    browser: true
+
+  rules:
+    no-console: 0
+    import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version
+    no-await-in-loop: 0
