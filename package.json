@@ -20,5 +20,7 @@
   },
   "type": "module",
   "homepage": "https://github.com/DarkJunior59/brain-games#readme",
-  "dependencies": {}
+  "dependencies": {
+    "promptly": "^3.2.0"
+  }
 }
