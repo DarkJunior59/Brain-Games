@@ -1,0 +1,11 @@
+name: project
+
+on:
+  - push
+  - pull_request
+
+jobs:
+  test:
+    name: Run linter
+    run: |
+      make lint
