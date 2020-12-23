@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "![Actions Status](https://github.com/DarkJunior59/brain-games/workflows/hexlet-check/badge.svg)",
+  "description": "![Actions Status](https://github.com/DarkJunior59/frontend-project-lvl1/workflows/hexlet-check/badge.svg)",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
@@ -16,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DarkJunior59/brain-games.git"
+    "url": "git+https://github.com/DarkJunior59/frontend-project-lvl1.git"
   },
   "author": "DarkJunior",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DarkJunior59/brain-games/issues"
+    "url": "https://github.com/DarkJunior59/frontend-project-lvl1/issues"
   },
   "type": "module",
-  "homepage": "https://github.com/DarkJunior59/brain-games#readme",
+  "homepage": "https://github.com/DarkJunior59/frontend-project-lvl1#readme",
   "dependencies": {
     "promptly": "^3.2.0"
   },
