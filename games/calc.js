@@ -1,10 +1,12 @@
+import randomNumber from '../src/random-number.js';
+
 const question = 'What is the result of the expression?';
 
 const game = () => {
   const znak = ['+', '-', '*'];
-  const number1 = Math.round(Math.random() * 100);
-  const number2 = Math.round(Math.random() * 100);
-  const index = Math.round(Math.random() * 2);
+  const number1 = randomNumber(100);
+  const number2 = randomNumber(100);
+  const index = randomNumber(2);
   let solution = 0;
   switch (index) {
     case 0:

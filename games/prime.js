@@ -1,3 +1,5 @@
+import randomNumber from '../src/random-number.js';
+
 const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
@@ -13,7 +15,7 @@ const isPrime = (num) => {
 };
 
 const game = () => {
-  const number = Math.round(Math.random() * 100);
+  const number = randomNumber(100);
   console.log(`Question: ${number}`);
   return (isPrime(number)) ? 'yes' : 'no';
 };

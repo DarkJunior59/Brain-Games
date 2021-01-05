@@ -1,16 +1,18 @@
+import randomNumber from '../src/random-number.js';
+
 const question = 'What number is missing in the progression?';
 
 const progressionLength = () => {
-  const num = Math.round(Math.random() * 10);
+  const num = randomNumber(10);
   return (num >= 4 && num < 10) ? num : progressionLength();
 };
 
 const game = () => {
-  const begin = Math.round(Math.random() * 100);
-  const step = Math.round((Math.random() * 100) + 1);
+  const begin = randomNumber(100);
+  const step = randomNumber(100) + 1;
   const leng = progressionLength();
   const items = [begin];
-  const indexNum = Math.round(Math.random() * leng);
+  const indexNum = randomNumber(leng);
   for (let i = 1; i <= leng; i += 1) {
     items[i] = items[i - 1] + step;
   }
