@@ -5,7 +5,7 @@ export default async (question, game) => {
   const name = await promptly.prompt('May I have your name?');
   console.log(`Hello, ${name}`);
   console.log(question);
-  for (let i = 2; i >= 0; i -= 1) {
+  for (let i = 0; i < 3; i += 1) {
     const solution = game();
     const answer = await promptly.prompt('You answer:');
     if (solution === answer) {
