@@ -30,26 +30,28 @@ To start games, you need to run the following commands:
 $ brain-even
 ```
 
-<script id="asciicast-XoubTxWMVQ0Jz2zVHSEf9S3Qc" src="https://asciinema.org/a/XoubTxWMVQ0Jz2zVHSEf9S3Qc.js" async></script>
+[![asciicast](https://asciinema.org/a/382605.svg)](https://asciinema.org/a/382605)
 
 ```sh 
 $ brain-calc
 ```
-<script id="asciicast-382612" src="https://asciinema.org/a/382612.js" async></script>
+
+[![asciicast](https://asciinema.org/a/382612.svg)](https://asciinema.org/a/382612)
+
 ```sh
 $ brain-gcd
 ```
 
-<script id="asciicast-382626" src="https://asciinema.org/a/382626.js" async></script>
+[![asciicast](https://asciinema.org/a/382626.svg)](https://asciinema.org/a/382626)
 
 ```sh
 $ brain-progression
 ```
 
-<script id="asciicast-382633" src="https://asciinema.org/a/382633.js" async></script>
+[![asciicast](https://asciinema.org/a/382633.svg)](https://asciinema.org/a/382633)
 
 ```sh
 $ brain-prime
 ```
 
-<script id="asciicast-382634" src="https://asciinema.org/a/382634.js" async></script>
+[![asciicast](https://asciinema.org/a/382634.svg)](https://asciinema.org/a/382634)
