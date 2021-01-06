@@ -4,16 +4,16 @@ const question = 'What number is missing in the progression?';
 
 const progressionLength = () => {
   const num = randomNumber(10);
-  return (num >= 4 && num < 10) ? num : progressionLength();
+  return (num < 5) ? 5 : num;
 };
 
 const game = () => {
   const begin = randomNumber(100);
   const step = randomNumber(100) + 1;
-  const leng = progressionLength();
+  const length = progressionLength();
   const items = [begin];
-  const indexNum = randomNumber(leng);
-  for (let i = 1; i <= leng; i += 1) {
+  const indexNum = randomNumber(length);
+  for (let i = 1; i <= length; i += 1) {
     items[i] = items[i - 1] + step;
   }
   const randomNumOfItems = items[indexNum];
