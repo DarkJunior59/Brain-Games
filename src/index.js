@@ -6,12 +6,15 @@ export default async (question, game) => {
   console.log(`Hello, ${name}`);
   console.log(question);
   for (let i = 0; i < 3; i += 1) {
-    const solution = game();
+    const gameData = game();
+    const gameTask = gameData.task;
+    const gameSolution = gameData.solution;
+    console.log(gameTask);
     const answer = await promptly.prompt('You answer:');
-    if (solution === answer) {
+    if (gameSolution === answer) {
       console.log('Correct!');
     } else {
-      console.log(`'${answer}' is wrong answer ;( correct answer '${solution}'`);
+      console.log(`'${answer}' is wrong answer ;( correct answer '${gameSolution}'`);
       console.log(`Let's try again, ${name}!`);
       return;
     }

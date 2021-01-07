@@ -28,8 +28,9 @@ const game = () => {
   }
   const string = progressionWithoutNum.join(' ');
   const solution = String(randomNumOfItems);
-  console.log(`Question: ${string}`);
-  return solution;
+  const task = `Question: ${string}`;
+  const object = { task, solution };
+  return object;
 };
 
 export { question, game };

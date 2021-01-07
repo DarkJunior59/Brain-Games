@@ -13,8 +13,9 @@ const game = () => {
   const number1 = randomNumber(100);
   const number2 = randomNumber(100);
   const solution = String(gcd(number1, number2));
-  console.log(`Question: ${number1} ${number2}`);
-  return solution;
+  const task = `Question: ${number1} ${number2}`;
+  const object = { task, solution };
+  return object;
 };
 
 export { question, game };

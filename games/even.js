@@ -7,8 +7,9 @@ const isEven = (num) => num % 2 === 0;
 const game = () => {
   const number = randomNumber(100);
   const solution = isEven(number) ? 'yes' : 'no';
-  console.log(`Question: ${number}`);
-  return solution;
+  const task = `Question: ${number}`;
+  const object = { task, solution };
+  return object;
 };
 
 export { question, game };

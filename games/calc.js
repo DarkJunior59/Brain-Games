@@ -18,8 +18,9 @@ const game = () => {
     default:
       solution = String(number1 * number2);
   }
-  console.log(`Question: ${number1} ${znak[index]} ${number2}`);
-  return solution;
+  const task = `Question: ${number1} ${znak[index]} ${number2}`;
+  const object = { task, solution };
+  return object;
 };
 
 export { question, game };

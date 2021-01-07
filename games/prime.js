@@ -16,8 +16,10 @@ const isPrime = (num) => {
 
 const game = () => {
   const number = randomNumber(100);
-  console.log(`Question: ${number}`);
-  return (isPrime(number)) ? 'yes' : 'no';
+  const task = `Question: ${number}`;
+  const solution = isPrime(number) ? 'yes' : 'no';
+  const object = { task, solution };
+  return object;
 };
 
 export { question, game };
