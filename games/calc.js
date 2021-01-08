@@ -1,3 +1,4 @@
+import gameEngine from '../src/index.js';
 import randomNumber from '../src/random-number.js';
 
 const question = 'What is the result of the expression?';
@@ -23,4 +24,4 @@ const game = () => {
   return object;
 };
 
-export { question, game };
+export default () => gameEngine(question, game);

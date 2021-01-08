@@ -1,3 +1,4 @@
+import gameEngine from '../src/index.js';
 import randomNumber from '../src/random-number.js';
 
 const question = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -12,4 +13,4 @@ const game = () => {
   return object;
 };
 
-export { question, game };
+export default () => gameEngine(question, game);

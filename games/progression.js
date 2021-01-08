@@ -1,3 +1,4 @@
+import gameEngine from '../src/index.js';
 import randomNumber from '../src/random-number.js';
 
 const question = 'What number is missing in the progression?';
@@ -33,4 +34,4 @@ const game = () => {
   return object;
 };
 
-export { question, game };
+export default () => gameEngine(question, game);

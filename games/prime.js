@@ -1,3 +1,4 @@
+import gameEngine from '../src/index.js';
 import randomNumber from '../src/random-number.js';
 
 const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -22,4 +23,4 @@ const game = () => {
   return object;
 };
 
-export { question, game };
+export default () => gameEngine(question, game);
