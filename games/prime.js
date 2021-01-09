@@ -1,5 +1,5 @@
 import gameEngine from '../src/index.js';
-import randomNumber from '../src/random-number.js';
+import generateNumber from '../src/random-number.js';
 
 const question = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
@@ -15,12 +15,12 @@ const isPrime = (num) => {
   return true;
 };
 
-const game = () => {
-  const number = randomNumber(100);
+const generateArguments = () => {
+  const number = generateNumber(100);
   const task = `Question: ${number}`;
   const solution = isPrime(number) ? 'yes' : 'no';
-  const object = { task, solution };
-  return object;
+  const argumentsForGameEngine = { task, solution };
+  return argumentsForGameEngine;
 };
 
-export default () => gameEngine(question, game);
+export default () => gameEngine(question, generateArguments);

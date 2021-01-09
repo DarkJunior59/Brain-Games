@@ -1,19 +1,19 @@
 import gameEngine from '../src/index.js';
-import randomNumber from '../src/random-number.js';
+import generateNumber from '../src/random-number.js';
 
 const question = 'What number is missing in the progression?';
 
-const progressionLength = () => {
-  const num = randomNumber(10);
+const createLength = () => {
+  const num = generateNumber(10);
   return (num < 5) ? 5 : num;
 };
 
-const game = () => {
-  const begin = randomNumber(100);
-  const step = randomNumber(100) + 1;
-  const length = progressionLength();
+const generateArguments = () => {
+  const begin = generateNumber(100);
+  const step = generateNumber(100) + 1;
+  const length = createLength();
   const items = [begin];
-  const indexNum = randomNumber(length);
+  const indexNum = generateNumber(length);
   for (let i = 1; i <= length; i += 1) {
     items[i] = items[i - 1] + step;
   }
@@ -30,8 +30,8 @@ const game = () => {
   const string = progressionWithoutNum.join(' ');
   const solution = String(randomNumOfItems);
   const task = `Question: ${string}`;
-  const object = { task, solution };
-  return object;
+  const argumentsForGameEngine = { task, solution };
+  return argumentsForGameEngine;
 };
 
-export default () => gameEngine(question, game);
+export default () => gameEngine(question, generateArguments);

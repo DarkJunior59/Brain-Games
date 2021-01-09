@@ -1,13 +1,13 @@
 import gameEngine from '../src/index.js';
-import randomNumber from '../src/random-number.js';
+import generateNumber from '../src/random-number.js';
 
 const question = 'What is the result of the expression?';
 
-const game = () => {
-  const znak = ['+', '-', '*'];
-  const number1 = randomNumber(100);
-  const number2 = randomNumber(100);
-  const index = randomNumber(2);
+const generateArguments = () => {
+  const operators = ['+', '-', '*'];
+  const number1 = generateNumber(100);
+  const number2 = generateNumber(100);
+  const index = generateNumber(2);
   let solution = 0;
   switch (index) {
     case 0:
@@ -19,9 +19,9 @@ const game = () => {
     default:
       solution = String(number1 * number2);
   }
-  const task = `Question: ${number1} ${znak[index]} ${number2}`;
-  const object = { task, solution };
-  return object;
+  const task = `Question: ${number1} ${operators[index]} ${number2}`;
+  const argumentsForGameEngine = { task, solution };
+  return argumentsForGameEngine;
 };
 
-export default () => gameEngine(question, game);
+export default () => gameEngine(question, generateArguments);
