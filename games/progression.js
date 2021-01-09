@@ -4,7 +4,7 @@ import generateNumber from '../src/random-number.js';
 const question = 'What number is missing in the progression?';
 
 const createLength = () => {
-  const num = generateNumber(10);
+  const num = generateNumber(9);
   return (num < 5) ? 5 : num;
 };
 
@@ -18,16 +18,10 @@ const generateArguments = () => {
     items[i] = items[i - 1] + step;
   }
   const randomNumOfItems = items[indexNum];
-  const progressionWithoutNum = [];
+  const newItems = [...items];
   const emptyValue = '..';
-  for (let i = 0; i < items.length; i += 1) {
-    if (items[i] === randomNumOfItems) {
-      progressionWithoutNum[i] = emptyValue;
-    } else {
-      progressionWithoutNum[i] = items[i];
-    }
-  }
-  const string = progressionWithoutNum.join(' ');
+  newItems[indexNum] = emptyValue;
+  const string = newItems.join(' ');
   const solution = String(randomNumOfItems);
   const task = `Question: ${string}`;
   const argumentsForGameEngine = { task, solution };
