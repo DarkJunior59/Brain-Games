@@ -7,18 +7,22 @@ const generateArguments = () => {
   const operators = ['+', '-', '*'];
   const number1 = generateNumber(100);
   const number2 = generateNumber(100);
-  const index = generateNumber(2);
-  let solution = 0;
+  const index = generateNumber(operators.length - 1);
+  let result = 0;
   switch (index) {
     case 0:
-      solution = String(number1 + number2);
+      result = number1 + number2;
       break;
     case 1:
-      solution = String(number1 - number2);
+      result = number1 - number2;
+      break;
+    case 2:
+      result = number1 * number2;
       break;
     default:
-      solution = String(number1 * number2);
+      throw new Error('Non-existent element');
   }
+  const solution = `${result}`;
   const task = `${number1} ${operators[index]} ${number2}`;
   const argumentsForGameEngine = { task, solution };
   return argumentsForGameEngine;
