@@ -7,10 +7,10 @@ const generateRound = () => {
   const begin = generateNumber(100);
   const step = generateNumber(100) + 1;
   const length = generateNumber(9, 5);
-  const items = [begin];
+  const items = [];
   const indexNum = generateNumber(length);
   for (let i = 1; i <= length; i += 1) {
-    items[i] = items[i - 1] + step;
+    items[i] = begin + step * i;
   }
   const randomNumOfItems = items[indexNum];
   const newItems = [...items];
