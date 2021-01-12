@@ -3,15 +3,10 @@ import generateNumber from '../random-number.js';
 
 const question = 'What number is missing in the progression?';
 
-const createLength = () => {
-  const num = generateNumber(9);
-  return (num < 5) ? 5 : num;
-};
-
 const generateArguments = () => {
   const begin = generateNumber(100);
   const step = generateNumber(100) + 1;
-  const length = createLength();
+  const length = generateNumber(9, 5);
   const items = [begin];
   const indexNum = generateNumber(length);
   for (let i = 1; i <= length; i += 1) {
