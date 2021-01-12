@@ -19,7 +19,7 @@ const generateArguments = () => {
     default:
       solution = String(number1 * number2);
   }
-  const task = `Question: ${number1} ${operators[index]} ${number2}`;
+  const task = `${number1} ${operators[index]} ${number2}`;
   const argumentsForGameEngine = { task, solution };
   return argumentsForGameEngine;
 };

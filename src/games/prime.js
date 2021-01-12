@@ -16,9 +16,8 @@ const isPrime = (num) => {
 };
 
 const generateArguments = () => {
-  const number = generateNumber(100);
-  const task = `Question: ${number}`;
-  const solution = isPrime(number) ? 'yes' : 'no';
+  const task = generateNumber(100);
+  const solution = isPrime(task) ? 'yes' : 'no';
   const argumentsForGameEngine = { task, solution };
   return argumentsForGameEngine;
 };

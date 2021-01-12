@@ -10,7 +10,7 @@ export default async (question, game) => {
     const gameData = game();
     const gameTask = gameData.task;
     const gameSolution = gameData.solution;
-    console.log(gameTask);
+    console.log(`Question: ${gameTask}`);
     const answer = await promptly.prompt('You answer:');
     if (gameSolution === answer) {
       console.log('Correct!');

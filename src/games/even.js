@@ -6,9 +6,8 @@ const question = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isEven = (num) => num % 2 === 0;
 
 const generateArguments = () => {
-  const number = generateNumber(100);
-  const solution = isEven(number) ? 'yes' : 'no';
-  const task = `Question: ${number}`;
+  const task = generateNumber(100);
+  const solution = isEven(task) ? 'yes' : 'no';
   const argumentsForGameEngine = { task, solution };
   return argumentsForGameEngine;
 };

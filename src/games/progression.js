@@ -21,9 +21,8 @@ const generateArguments = () => {
   const newItems = [...items];
   const emptyValue = '..';
   newItems[indexNum] = emptyValue;
-  const string = newItems.join(' ');
+  const task = newItems.join(' ');
   const solution = String(randomNumOfItems);
-  const task = `Question: ${string}`;
   const argumentsForGameEngine = { task, solution };
   return argumentsForGameEngine;
 };
