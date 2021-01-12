@@ -10,7 +10,7 @@ const gcd = (a, b) => {
   return gcd(b, a % b);
 };
 
-const generateArguments = () => {
+const generateRound = () => {
   const number1 = generateNumber(100);
   const number2 = generateNumber(100);
   const solution = String(gcd(number1, number2));
@@ -19,4 +19,4 @@ const generateArguments = () => {
   return argumentsForGameEngine;
 };
 
-export default () => gameEngine(question, generateArguments);
+export default () => gameEngine(question, generateRound);

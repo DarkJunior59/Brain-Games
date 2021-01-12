@@ -3,7 +3,7 @@ import generateNumber from '../random-number.js';
 
 const question = 'What is the result of the expression?';
 
-const generateArguments = () => {
+const generateRound = () => {
   const operators = ['+', '-', '*'];
   const number1 = generateNumber(100);
   const number2 = generateNumber(100);
@@ -28,4 +28,4 @@ const generateArguments = () => {
   return argumentsForGameEngine;
 };
 
-export default () => gameEngine(question, generateArguments);
+export default () => gameEngine(question, generateRound);

@@ -15,11 +15,11 @@ const isPrime = (num) => {
   return true;
 };
 
-const generateArguments = () => {
+const generateRound = () => {
   const task = generateNumber(100);
   const solution = isPrime(task) ? 'yes' : 'no';
   const argumentsForGameEngine = { task, solution };
   return argumentsForGameEngine;
 };
 
-export default () => gameEngine(question, generateArguments);
+export default () => gameEngine(question, generateRound);

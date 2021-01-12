@@ -3,7 +3,7 @@ import generateNumber from '../random-number.js';
 
 const question = 'What number is missing in the progression?';
 
-const generateArguments = () => {
+const generateRound = () => {
   const begin = generateNumber(100);
   const step = generateNumber(100) + 1;
   const length = generateNumber(9, 5);
@@ -22,4 +22,4 @@ const generateArguments = () => {
   return argumentsForGameEngine;
 };
 
-export default () => gameEngine(question, generateArguments);
+export default () => gameEngine(question, generateRound);
