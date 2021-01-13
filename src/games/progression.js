@@ -6,7 +6,7 @@ const question = 'What number is missing in the progression?';
 const generateRound = () => {
   const begin = generateNumber(100);
   const step = generateNumber(100) + 1;
-  const length = generateNumber(9, 5);
+  const length = generateNumber(9, 4);
   const items = [];
   const indexNum = generateNumber(length);
   for (let i = 1; i <= length; i += 1) {
